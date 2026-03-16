@@ -14,7 +14,7 @@ Scheduled rule example:
 
 ```hcl
 module "eventbridge_lambda_target" {
-  source = "git::ssh://git@github.com:karoosoftware/terraform-eventbridge-lambda-target-module.git?ref=<commit-sha>"
+  source = "git::ssh://git@github.com/karoosoftware/terraform-eventbridge-lambda-target-module.git?ref=<commit-sha>"
 
   rule_name = "weekly-seeder"
 
@@ -41,7 +41,7 @@ Event-pattern rule example:
 
 ```hcl
 module "eventbridge_lambda_target" {
-  source = "git::ssh://git@github.com:karoosoftware/terraform-eventbridge-lambda-target-module.git?ref=<commit-sha>"
+  source = "git::ssh://git@github.com/karoosoftware/terraform-eventbridge-lambda-target-module.git?ref=<commit-sha>"
 
   rule_name = "cognito-delete-user-audit"
 
