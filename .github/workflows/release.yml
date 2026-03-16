@@ -1,0 +1,10 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    uses: karoosoftware/github-actions-workflows/.github/workflows/terraform-module-release.yml@main
