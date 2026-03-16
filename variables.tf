@@ -29,10 +29,10 @@ variable "schedule_expression" {
 variable "lambda_targets" {
   description = "Lambda targets for the EventBridge rule."
   type = list(object({
-    name        = string
-    lambda_arn  = string
-    input       = optional(string)
-    input_path  = optional(string)
+    name       = string
+    lambda_arn = string
+    input      = optional(string)
+    input_path = optional(string)
   }))
 
   validation {
